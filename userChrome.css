@@ -1,0 +1,344 @@
+/* === Firefox General === */
+/* Removes white loading page and fixes Firefox's white flashes*/
+@-moz-document url(about:blank), url(about:newtab), url(about:home), 
+domain(www.youtube.com), domain(www.reddit.com), domain(discordapp.com) {
+  html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+    background: #1d2021 !important;
+  }
+}
+
+/* === === Scrollbar === === */
+/* Removes scrollbar from view */
+:root{
+	scrollbar-width: none !important;
+}  
+@-moz-document url(about:privatebrowsing) { 
+	:root {
+		scrollbar-width: none !important;
+	}
+}
+
+/* === === PDF Viewer === === */
+@-moz-document regexp(".*\\.(p|P)(d|D)(f|F).*") {
+	#loadingBar .progress,
+	.dropdownToolbarButton > select,
+	.dropdownToolbarButton > select > option,
+	.overlayButton,
+	.secondaryToolbarButton,
+	.toolbarField,
+	body,
+	div#viewer {
+	  font-family: 'Consolas' !important;
+	  font-size: 12pt !important;
+	  background-color: #4a4a4f !important;
+	  
+	}
+	body {
+	  background-image: none!important;
+	  --sidebar-width: 270px !important;
+	  
+	}
+	* {
+		font-size: 12pt !important;
+		/*color: white !important;*/
+	}
+	.splitToolbarButtonSeparator,
+	.verticalToolbarSeparator {
+	  box-shadow: none!important;
+	  background-color: #4a4a4f !important;
+	}
+	div#toolbarViewer {
+	  font-family: 'Consolas' !important;
+	  background-color: #2a2a2e !important;
+	  background-image: none!important;
+	  border: 0px !important;
+	}
+	#numPages,
+	#pageNumber,
+	#scaleSelect {
+	  color: #ffffff !important;
+	}
+	.pdfViewer .page {
+	  border-image: none!important;
+	}
+	#pageNumber,
+	#scaleSelectContainer {
+	  border: 0px solid!important;
+	  border-color: #737373 !important;
+	}
+	#loadingBar {
+	  position: relative;
+	  width: 100%;
+	  height: 4px;
+	  background-color: #45a1ff !important;
+	  border-bottom: 0px solid!important;
+	}
+	#sidebarContainer,
+	#sidebarContent {
+	  font-family: 'Consolas' !important;
+	  background-color: #38383d !important;
+	  color: #ffffff !important;
+	}
+	#toolbarSidebar {
+	  font-family: 'Consolas' !important;
+	  background-color: #2a2a2e !important;
+	  background-image: none!important;
+	  border-color: #4a4a4f !important;
+	  color: #ffffff !important;
+	}
+	.doorHanger,
+	.doorHangerRight {
+	  border: 0px solid!important;
+	  border-color: #4a4a4f !important;
+	  box-shadow: none!important;
+	}
+	#toolbarContainer,
+	.findbar,
+	.secondaryToolbar {
+	  background-color: #4a4a4f !important;
+	  background-image: none!important;
+	}
+	.dropdownToolbarButton,
+	.overlayButton,
+	.secondaryToolbarButton,
+	.toolbarButton {
+	  border: none!important;
+	  color: #b1b1b3 !important;
+	}
+	.dropdownToolbarButton,
+	.overlayButton,
+	.toolbarButton:focus,
+	.toolbarButton:hover {
+	  background-color: #4a4a4f !important;
+	  background-image: none!important;
+	  border: none!important;
+	  box-shadow: none!important;
+	}
+	.secondaryToolbarButton:focus,
+	.secondaryToolbarButton:hover {
+	  background-color: #38383d !important;
+	  background-image: none!important;
+	  box-shadow: none!important;
+	}
+	.secondaryToolbarButton::before,
+	.toolbarButton::before {
+	  filter: invert(20%)!important;
+	}
+	.secondaryToolbarButton.toggled,
+	.splitToolbarButton.toggled > .toolbarButton.toggled,
+	.toolbarButton.toggled {
+	  background-color: #38383d !important;
+	  background-image: none!important;
+	  box-shadow: none!important;
+	  color: #f9f9fa !important;
+	}
+	.horizontalToolbarSeparator {
+	  background-color: #737373 !important;
+	  box-shadow: none!important;
+	}
+}
+
+/* === === GOOGLE CALENDAR DARK MODE === === */
+@-moz-document regexp('https://calendar\\.google\\.com/calendar/(?!b).*') {
+	/* domain("calendar.google.com") */
+	/* Invert entire webpage and reinvert specific items back to normal */
+	html {
+		filter: invert(90%) hue-rotate(180deg) !important;
+		background: #1d2021 !important;
+	}
+	/* Google Apps launcher cannot be editted because of iframe */
+	iframe{
+		filter: invert(110%) hue-rotate(180deg) !important;
+	}
+
+	/* Removes some box shadows but not under clicked events */
+	* {
+		box-shadow: none !important;
+	}
+
+	/* Removes header gray line */
+	.KKOvEb > * {
+		border: none !important;
+	}
+
+	/* Edit calendar view type button to fit dark theme */
+	.HLI7qf, .Cd9hpd, .g4jUVc, .U26fgb.c7fp5b.FS4hgd.wXaa9.mAozAc.iWO5td, .HLI7qf.Cd9hpd {
+		border: none !important;
+		background-image: none !important;
+		background-color: #EEEEEE !important;
+		background: #EEEEEE !important;
+	}
+	.NlWrkb, .snByac {
+		/* Makes the calendar view type button text brighter */
+		color: black !important;
+	}
+
+	/* Edit today button to fit dark theme */
+	.ZFr60d.CeoRYc, .U26fgb.O0WRkf.oG5Srb.C0oVfc.GXlaye.qRI4pc {
+		border: none !important;
+		outline: none !important;
+		background-image: none !important;
+		background-color: #EEEEEE !important;
+		background: #EEEEEE !important;
+	}
+
+	/* Remove border and scrollbar of search contacts to fit dark theme */
+	.u3WVdc.jBmls {
+		border: none !important;
+		scrollbar-width: none !important;
+	}
+	/* Fixes contacts search results' uneven padding */
+	.MkjOTb.oKubKe.VLt6T {
+		padding: 5px 3px 8px 3px !important;
+		min-height: 39px !important;
+	}
+
+	/* Removes scrollbar from left sidebar */
+	.QQYuzf, .YO50ue, .hEtGGf.HDIIVe.sBn5T{
+		scrollbar-width: none !important;
+	}
+
+	
+	/* === GENERAL === */
+  /* TO-DO LIST */
+	/* - Cannot edit google apps launcher because css cannot edit iframes */
+	/* - Some text/images are black/still inverted (but only minor ones rn) */
+	/* - Box shadows for many view types when clicking on events are still white */
+	/*    - Cannot seem to edit them */
+	/* - Uses [*] for a few elements because unable to find element class name */
+	/*   or popups closes to quickly, but this is inefficient method */
+
+	/* Remove box shadow from event popup */
+	.pdqVLc, .JtukPc, .jefcFd, #xDetDlg, .RDlrG.Inn9w.iWO5td {
+		box-shadow: 1px 1px 5px 15px white !important;
+	}
+	/* Remove box shadow from calendar view type popup */
+	.XvhY1d, .JPdR6b.hxbWqd.qjTEB, .JAPqpe.K0NPx {
+		background-image: none !important;
+		box-shadow: 1px 1px 5px 15px white !important;
+	}
+	/* Invertion of images, svg graphics (avatars, icons) */
+	*:not([data-date]):before, img, svg {
+		filter: invert(110%) hue-rotate(180deg) brightness(1.1) saturate(120%) !important;
+	}
+	/* Invertion of My Calendar colors and its box shadow from popup and moon phases */
+	.uVccjd.iIJNvc.qZvm2d-ibnC6b-JIbuQc.N2RpBe, .st-wc {
+		filter: invert(90%) hue-rotate(180deg) !important;
+	}
+	.JPdR6b.QA0Szd-xl07Ob.qjTEB, .JPdR6b.e5Emjc.kydeve.e6NAn {
+		box-shadow: 1px 1px 5px 15px white !important;
+	}
+	.azQ4Lc.pka1xd {
+		filter: invert(90%) hue-rotate(180deg) !important;
+	}
+	/* Remove box shadow from settings popup */
+	.JPdR6b.xAHiW.qjTEB {
+		box-shadow: 1px 1px 5px 15px white !important;
+	}
+	/* Remove box shadow and outline from account settings popup */
+	.gb_3a.gb_F.gb_l.gb_4a.gb_na {
+		box-shadow: 1px 1px 5px 15px white !important;
+		border: none !important;
+	}
+	/* Remove box shadow of search bar */
+	.gb_Re.gb_pf {
+		box-shadow: none !important;
+	}
+	/* Remove box shadow of +Create button */
+	button.VfPpkd-BIzmGd.SaBhMc.NNFoTc.wJGlHe{
+		box-shadow: 1px 1px 5px 15px white !important;
+	}
+	/* Remove box shadow of moon phases */
+	.Az5uJd.RLj2u {
+		box-shadow: none !important;
+	}
+	/* event summary when creating new event */
+	.nI1ZSd.PHZhJd > * {
+		background-image: none !important;
+		box-shadow: 1px 1px 5px 15px white !important;
+	}
+
+
+	/* === WEEK VIEW === */
+
+	/* Events in Week View, Past events in week view */
+	.NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd {
+		filter: invert(90%) hue-rotate(180deg) !important;
+	}
+	/* Past events in week view */
+	.NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd.UflSff.jKgTF {
+		filter: invert(90%) hue-rotate(180deg) !important;
+	}
+	/* Apply translucency to past events */
+	.NlL62b.EfQccc.elYzab-cXXICe-Hjleke.EiZ8Dd.UflSff {
+		filter: opacity(90%) !important;
+	}
+
+
+	/* === MONTH VIEW === */
+
+	/* Remove box shadow when clicking events in month view */
+	.ifwtOb.elYzab-cXXICe-Hjleke.NlL62b.xHTz8b, .g3dbUc.smECzc.jKgTF.QGRmIf,
+	.ifwtOb.KCIIIb.xHTz8b, .g3dbUc.KCIIIb, .I7OXgf.NkChXe.ZEeHrd.Inn9w.iWO5td {
+		box-shadow: none !important;
+	}
+}
+
+/* === === GOOGLE NEWS DARK MODE === === */
+@-moz-document domain("news.google.com") {
+	/* - Remove borders */
+	/* - Invert some pictures */
+	/* - Somewhat slow to render? */
+	html {
+		filter: invert(90%) hue-rotate(180deg) !important;
+		background: #1d2021 !important;
+	}
+	* {
+		border: none !important;
+		box-shadow: none !important;
+	}
+	iframe{
+		filter: invert(110%) hue-rotate(180deg) !important;
+	}
+
+	/* Removes scrollbar on left sidebar */
+	.gb_Ec, .gb_zc.gb_xc.gb_na.gb_Cc.gb_Dc {
+		scrollbar-width: none !important;
+	}
+
+	/* Invertion of images, weather icons, header "Google" logo, profile picture */
+	.AZtY5d.fvuwob.d7hoq, .yXJMw,  .gb_ua.gb_Vc, .gb_Ia.gbii {
+		filter: invert(90%) hue-rotate(180deg) saturate(150%) !important;
+	}
+
+	/* Remove box shadow from header */
+	.gb_sa.gb_Za.gb_Qe.gb_Od.gb_Pd.gb_Dc {
+		box-shadow: none !important;
+	}
+}
+
+/* === === GOOGLE DRIVE SMALL EDITS === === */
+@-moz-document domain("drive.google.com") {
+	* {
+		scrollbar-width: none !important;
+	}
+}
+
+/* === === YOUTUBE SMALL EDITS === === */
+@-moz-document domain("youtube.com") {
+	* {
+		scrollbar-width: none !important;
+		border: none !important;
+	}
+}
+
+/* === === REDDIT SMALL EDITS === === */
+@-moz-document domain("reddit.com") {
+	/* Remove trending top bar */
+	._1Pcih1cgtQusjyfxp7YPbP.Ab_CG1GZxb0mjtooTcgRC._5q2KEvcKLfbsGTZKUsubA  {
+		display: none !important;
+	}
+	* {
+		border: none !important;
+	}
+}
