@@ -1,0 +1,384 @@
+/* This positions the tabs under the navaigator container */
+/* Where 1 is tabs above url bar and 2 is tabs below url bar */
+#titlebar {
+	-moz-box-ordinal-group: 1 !important;
+}
+
+/* === === Browser toolbar === === */
+#navigator-toolbox {
+	--tabs-border-color: #1d1f28 !important;
+	background-color: #1d1f28 !important;
+	border: none !important;
+	box-shadow: none !important;
+	max-height: 95px !important;
+	min-height: 95px !important;
+}
+
+/* === === URL Bar === === */
+/* Suggestions of url when typing */
+.urlbarView {
+	background-color: #1d1f28 !important;
+	box-shadow: none !important;
+	margin: auto !important;
+	width: 70% !important;
+}
+
+/* Suggestions hovered over with mouse */
+.urlbarView:not(.megabar) .urlbarView-row:not([type="tip"])[selected],
+.urlbarView.megabar .urlbarView-row:not([type="tip"])[selected] > .urlbarView-row-inner {
+	background: #73e645 !important;
+	color: black !important;
+	fill-opacity: 1;
+}
+
+#urlbar-background, #urlbar-container, .urlbar-input-box {
+	background-color: #1d1f28 !important;
+	background-image: none !important;
+}
+
+#urlbar:not(.megabar), #urlbar.megabar > #urlbar-background, #searchbar {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+input#urlbar-input {
+	caret-color: transparent !important;
+	font-family: "Consolas", sans-serif !important;
+	font-size: 15pt !important;
+	font-weight: 700 !important;
+}
+
+/* === === Browser Tabs === === */
+
+/* Hide some bloat */
+.tab-line, .tabbrowser-tab::before, .tabbrowser-tab::after, .tabbrowser-tab .tab-icon-image {
+	display: none !important;
+}
+
+/* Customize browser tabs to have color, highlight, and rounded corners */
+.tabbrowser-tab {
+	background-color: #1e1f29 !important;
+	background-image: linear-gradient(to left, 
+	var(--color-tab-normal-start), var(--color-tab-normal-end)) !important;
+	border-radius: 40px !important;
+}
+
+.tabbrowser-tab:hover {
+	background-color: none !important;
+	background-image: linear-gradient(to left, #c97dff, #ff8989) !important;
+	color: black !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+	background-color: none !important;
+	background-image: linear-gradient(to left, #a1ffb6, #f9ff99) !important;
+	color: black !important;
+	font-weight: var(--tab-font-weight) !important;
+}
+
+.tab-content {
+	background-color: none !important;
+	background-image: none !important;
+	font-family: "Consolas", sans-serif !important;
+	font-size: 14pt !important;
+}
+
+/* Pinned Tabs */
+.tabbrowser-tab:hover[pinned="true"] {
+	background-image: linear-gradient(to left, #ff8989, #ff8989) !important;
+}
+
+.tabbrowser-tab[pinned="true"][selected="true"] {
+	background-image: linear-gradient(to left, #a1ffb6, #a1ffb6) !important;
+}
+
+.tabbrowser-tab[pinned="true"] {
+	background-image: linear-gradient(to left, #ffc386, #ffc386) !important;
+	color: #1d1d1d !important;
+}
+
+.tabbrowser-tab[pinned="true"] .tab-icon-image {
+	display: inline-block !important;
+	transform: scale(1.5) !important;
+	align-items: center !important;
+	display: inline-block !important;
+}
+
+.tabbrowser-tab[pinned="true"] .tab-label-container {
+	display: none !important;
+}
+
+.tab-stack {
+	display: flex !important;
+	justify-content: center !important;
+}
+
+.tab-close-button {
+	opacity: 0 !important;
+	transition: opacity 0.2s !important;
+	transition: opacity 0.2s ease !important;
+	-moz-transition: opacity 0.2s ease !important;
+}
+
+.tab-close-button:hover {
+	opacity: 1 !important;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+	display: none !important;
+}
+
+/* Removes some ugly borders in UI */
+#PanelUI-button {
+	border-image-slice: 0 !important;
+}
+
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+  display: none !important;
+}
+
+#toolbarbutton, .toolbarbutton, .scrollbox, 
+#scrollbox, .scrollbutton-up, #scrollbutton-up {
+	outline: none !important;
+	border: none !important;
+	border-image-slice: 0 !important;
+}
+
+/* === === Context Menu === === */
+.panel-arrowbox {
+	margin: 0 !important;
+	display: none !important;
+}
+
+.panel-arrowcontent {
+	opacity: 1 !important;
+	margin: 0 !important;
+}
+
+menupopup {
+	-moz-appearance: none !important;
+	background-color: #1d1d1d !important;
+	border: none !important;
+	min-width: 170px !important;
+	padding: 0px 0px 0px 0px !important;
+	font-size: 11pt !important;
+	font-family: 'Consolas' !important;
+}
+
+menuseparator {
+	-moz-appearance: none !important;
+	background-color: #808080 !important;
+	border: none !important;
+	margin: 4px 8px 4px 8px !important;
+	padding: 0px 0px 0px 0px !important;
+}
+
+menuitem, menu {
+	-moz-appearance: none !important;
+	color: var(--color-fg) !important;
+	padding: 7px 0px 7px 0px !important;
+}
+
+menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
+	color: #828282 !important;
+}
+
+menuitem:hover, menu:hover, menu[open="true"], menuitem[_moz-menuactive="true"]	 {
+	-moz-appearance: none !important;
+	padding: 7px 0px 7px 0px !important;
+	background-color: #404040 !important;
+}
+
+menugroup {
+	padding: 0px !important;
+	background-color: transparent !important;
+}
+
+menuitem > .menu-text, menuitem > .menu-iconic-text {
+	color: var(--color-fg) !important;
+}
+
+menuitem[type="checkbox"], menuitem[type="radio"] {
+	padding-left: 8px !important;
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
+}
+
+menuitem[type="checkbox"] > .menu-iconic-text, 
+menuitem[type="radio"] > .menu-iconic-text {
+	padding-left: 5px !important;
+}
+
+menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
+	padding: 7px 0px 0px 0px !important;
+	border: var(--color-fg);
+	border-width: 0 0 2px 2px;
+	transform: rotate(-45deg) scale(.75);
+	margin-bottom: 4px !important;
+}
+
+menuitem[checked="true"][type="radio"] > .menu-iconic-left {
+	padding: 0px !important;
+	border: var(--color-fg);
+	height: 17px !important;
+	border-radius: 100%;
+	background: var(--color-fg);
+	transform: scale(.5); 
+}
+
+menucaption {
+	background-color: transparent !important;
+	color: var(--color-fg) !important;
+}
+
+#ContentSelectDropdown > menupopup {
+	background-image: none !important;
+}
+
+#ContentSelectDropdown {
+	padding: 0px !important;
+}
+
+menulist {
+	-moz-appearance: none !important;
+	padding: 0px 0px 0px 0px !important;
+	border: 0px solid #646464 !important;
+	background-color: transparent !important;
+}
+
+menulist:hover {
+	padding: 0px 0px 0px 0px !important;
+	border: 0px solid #828282 !important;
+	background-color: transparent !important;
+}
+
+menulist[open="true"]  {
+	border: 0px solid #646464 !important;
+	background-color: #404040 !important;
+}
+
+#context-back > .menu-iconic-left, #context-forward > .menu-iconic-left, 
+#context-reload > .menu-iconic-left, #context-stop > .menu-iconic-left, 
+#context-bookmarkpage > .menu-iconic-left {
+	padding: 0px !important;
+}
+
+#context-back, #context-forward, #context-reload, #context-stop, #context-bookmarkpage {
+	padding: 5px 0px 5px 0px !important;
+}
+
+.menu-iconic-left {
+	-moz-appearance: none !important;
+	padding: 0px 5px 0px 9px !important;
+}
+
+.menu-right {
+	-moz-appearance: none !important;
+	padding: 7.5px !important;
+	margin-right: 6px !important;
+	color: #FFFFFF !important;
+	border: #FFFFFF;
+	border-width: 0 2px 2px 0px;
+	transform: rotate(-45deg) scale(.55);
+}
+
+tooltip {
+	-moz-appearance: none !important;
+	color: #FFFFFF !important;
+	background-color: var(--color-bg) !important;
+	border: none !important;
+	padding: 6px !important;
+	font-family: 'Consolas' !important;
+	font-size: 11pt !important;
+}
+
+menuseparator, #context-sendlinktodevice, #context-sendpagetodevice, 
+#context-savelink, #screenshots_mozilla_org-menuitem-_create-screenshot, 
+#context_sendTabToDevice, #ublock0_raymondhill_net-menuitem-_uBlock0-blockElement, 
+#context-inspect-a11y {
+	display: none !important;
+}
+
+#placesContext_open\:newtab, #placesContext_openContainer\:tabs, 
+#placesContext_new\:bookmark, #placesContext_new\:folder, #placesContext_new\:separator, 
+#placesContext_cut, #placesContext_copy, #placesContext_paste, #placesContext_delete, 
+#placesContext_open\:newprivatewindow, #placesContext_sortBy\:name, 
+#placesContext_show\:info, #placesContext_open\:newwindow, #placesContext_createBookmark,
+#placesContext_delete_history, #placesContext_deleteHost {
+	color: #FFFFFF !important;
+}
+
+/* === === URL Preview === === */
+#statuspanel #statuspanel-label {
+	-moz-appearance: none !important;
+	background-color: #1d1d1d !important;
+	font-family: 'Consolas' !important;
+	font-size: 10pt !important;
+	font-weight: thin !important;
+	color: dodgerblue !important;
+	border: 0px solid #1d1d1d !important;
+}
+
+#statuspanel {
+	/*background-color: transparent !important;*/
+	border: none !important;
+	bottom: 20px !important;
+	height: 20px !important;
+	max-width: 45% !important;
+	transition: none !important;
+}
+
+statuspanel #statuspanel-inner {
+	background: transparent !important;
+	border: none !important;
+	height: 20px !important;
+}
+
+statuspanel #statuspanel-label {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+/* === === Sidebar === === */
+vbox#sidebar-box, #sidebar, #sidebar-header, #bookmarks-view, 
+#bookmarksPanel, #historyTree, #history-panel {
+	background-color: var(--color-bg) !important;
+	color: #ffffff !important;
+	font-size: 14pt !important;
+	font-family: 'Consolas' !important;
+	width: 450px !important;
+	border: none !important;
+}
+
+#sidebar-header {
+	font-size: 16pt !important;
+	font-family: 'Consolas' !important;
+}
+
+.sidebar-splitter, #sidebar-search-container {
+	display: none !important;
+}
+
+#viewButton {
+	color: #ffffff !important;
+}
+
+.sidebar-placesTreechildren::-moz-tree-image(title, container) {
+	/* removes ugly icons for bookmarks and history */
+	list-style-image: none !important;
+	margin: -5px !important;
+}
+
+#historyTree treechildren::-moz-tree-cell-text {
+	font-size: 10pt !important;
+	padding: 0px !important;
+	font-size: 14px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+#historyTree treechildren::-moz-tree-row {
+	min-height: 16px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
