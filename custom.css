@@ -64,5 +64,6 @@
     --urlbar-urlhighlight: #404040;
     --urlbar-font-fam: "Consolas";
     --urlbar-urlitem-height: 6px;
-
+    --urlbar-font-weight: 800;
+    --urlbar-font-size: 14pt;
 }
