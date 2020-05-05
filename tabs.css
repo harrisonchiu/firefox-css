@@ -1,0 +1,105 @@
+/* === === Browser Tabs === === */
+
+/* Hide some bloat */
+.tab-line, .tabbrowser-tab::before, 
+.tabbrowser-tab::after, .tabbrowser-tab .tab-icon-image {
+	display: none !important;
+}
+
+/* Tabs have gradient colors and rounded tabs */
+.tabbrowser-tab {
+	background-color: var(--dark-gray) !important;
+
+	background-image: linear-gradient(to left, 
+	var(--tab-startcolor-unfocused), 
+	var(--tab-endcolor-unfocused)) !important;
+
+	border-radius: var(--tab-height) !important;
+	max-height: 0px !important;
+}
+.tabbrowser-tab:hover {
+	background-color: none !important;
+
+	background-image: linear-gradient(to left, 
+	var(--tab-startcolor-hover), 
+	var(--tab-endcolor-hover)) !important;
+
+	color: var(--black) !important;
+}
+.tabbrowser-tab[selected="true"] {
+	background-color: none !important;
+
+	background-image: linear-gradient(to left, 
+	var(--tab-startcolor-selected), 
+	var(--tab-endcolor-selected)) !important;
+
+	color: var(--black) !important;
+	font-weight: var(--tab-font-weight) !important;
+}
+.tab-content {
+	background-color: none !important;
+	background-image: none !important;
+	font-family: var(--tab-font-fam) !important;
+	font-size: var(--tab-font-size) !important;
+}
+
+/* Pinned Tabs */
+.tabbrowser-tab:hover[pinned="true"] {
+	background-image: linear-gradient(to left, 
+	var(--pintab-startcolor-hover), 
+	var(--pintab-endcolor-hover)) !important;
+}
+.tabbrowser-tab[pinned="true"][selected="true"] {
+	background-image: linear-gradient(to left, 
+	var(--pintab-startcolor-selected), 
+	var(--pintab-endcolor-selected)) !important;
+}
+.tabbrowser-tab[pinned="true"] {
+	color: var(--dark-gray-text) !important;
+	background-image: linear-gradient(to left, 
+	var(--pintab-startcolor-unfocused), 
+	var(--pintab-endcolor-unfocused)) !important;
+}
+.tabbrowser-tab[pinned="true"] .tab-icon-image {
+	display: inline-block !important;
+	transform: scale(1.5) !important;
+	align-items: center !important;
+	display: inline-block !important;
+}
+.tabbrowser-tab[pinned="true"] .tab-label-container {
+	display: none !important;
+}
+
+/* Tabs close button */
+.tab-close-button {
+	opacity: 0 !important;
+	transition: opacity 0.2s !important;
+	transition: opacity 0.2s ease !important;
+	-moz-transition: opacity 0.2s ease !important;
+}
+.tab-close-button:hover {
+	opacity: 1 !important;
+}
+.titlebar-spacer[type="pre-tabs"] {
+	display: none !important;
+}
+
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+  display: none !important;
+}
+
+/* Tabs scrollbox */
+#toolbarbutton, .toolbarbutton, .scrollbox, 
+#scrollbox, .scrollbutton-up, #scrollbutton-up {
+	outline: none !important;
+	border: none !important;
+	border-image-slice: 0 !important;
+}
+
+/* Tab height */
+.tab-stack {
+	min-height: var(--tab-height) !important;
+	max-height: var(--tab-height) !important;
+	display: flex !important;
+	justify-content: center !important;
+}

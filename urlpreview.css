@@ -1,0 +1,31 @@
+/* === === URL Preview === === */
+/* Small bottom right box that displays url when hovering */
+#statuspanel #statuspanel-label {
+	-moz-appearance: none !important;
+	background-color: var(--urlbox-bg) !important;
+	font-family: var(--urlbox-font-fam) !important;
+	font-weight: var(--urlbox-font-weight) !important;
+	font-size: var(--urlbox-font-size) !important;
+	color: var(--urlbox-color) !important;
+	border: 0px !important;
+}
+
+/* ??? */
+#statuspanel {
+	border: none !important;
+	bottom: 20px !important;
+	height: 20px !important;
+	max-width: 45% !important;
+	transition: none !important;
+}
+
+statuspanel #statuspanel-inner {
+	background: transparent !important;
+	border: none !important;
+	height: 20px !important;
+}
+
+statuspanel #statuspanel-label {
+	background-color: transparent !important;
+	border: none !important;
+}

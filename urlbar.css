@@ -1,0 +1,68 @@
+/* === === URL Bar === === */
+
+/* Url Search Bar */
+#urlbar-input {
+	font-family: var(--urlbar-font-fam) !important;
+    color: var(--white) !important;
+}
+#urlbar #urlbar-background {
+    background-color: var(--dark-gray) !important;
+    border: none !important;
+    border-radius: 0px;
+    box-shadow: none !important;
+}
+#urlbar[open="true"] #urlbar-background {
+    background-color: var(--dark-gray) !important;
+}
+.urlbarView:not(.megabar) 
+.urlbarView-row:not([type="tip"]):hover,
+.urlbarView.megabar 
+.urlbarView-row:not([type="tip"]):hover > 
+.urlbarView-row-inner {
+    background: none !important;
+}
+.urlbarView #urlbar-results 
+.urlbarView-row .urlbarView-row-inner:hover {
+    background-color: var(--urlbar-urlhighlight) !important;
+    color: var(--urlbar-urlcolor) !important;
+}
+.urlbarView #urlbar-results
+.urlbarView-row[aria-selected="true"]
+.urlbarView-row-inner {
+    background-color: var(--urlbar-urlhighlight) !important;
+    color: var(--urlbar-urlcolor) !important;
+}
+.urlbarView.megabar .urlbarView-body-inner {
+    border: 0 !important;
+}
+.urlbarView #urlbar-results {
+    color: var(--white) !important;
+}
+.urlbarView #urlbar-results .urlbarView-row .urlbarView-url {
+    color: var(--urlbar-urlcolor) !important;
+}
+
+/* Height of each url in suggestions list */
+.urlbarView-row {
+	padding: var(--urlbar-urlitem-height) !important;
+}
+
+/* Main url bar body */
+#nav-bar {
+	background-color: var(--dark-gray) !important;
+}
+#navigator-toolbox {
+	background-color: var(--dark-gray) !important;
+	border: none !important;
+	box-shadow: none !important;
+	max-height: 90px !important;
+	min-height: 90px !important;
+}
+
+/* Remove bloat from url bar */
+.urlbarView-favicon, 
+.urlbar-history-dropmarker,
+.urlbarView-type-icon,
+#star-button, #identity-box {
+	display: none !important;
+}

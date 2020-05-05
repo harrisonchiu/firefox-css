@@ -1,0 +1,23 @@
+/* Change bars order where 1 is the top */
+/* titlebar is tabs // navbar is searchbar area */
+/* personalbar is booksmark bar */
+#titlebar {
+    -moz-box-ordinal-group: 1 !important;
+}
+#nav-bar {
+    -moz-box-ordinal-group: 2 !important;
+}
+#PersonalToolbar {
+    -moz-box-ordinal-group: 3 !important;
+}
+
+/* Hamburger menu */
+.panel-subview-body {
+	background-color: var(--menu-bg) !important;
+	font-size: var(--menu-font-size) !important;
+}
+
+/* Removes some ugly borders in UI */
+#PanelUI-button {
+	border-image-slice: 0 !important;
+}

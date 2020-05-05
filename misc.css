@@ -1,0 +1,10 @@
+/* Small box when hovering over left nav bar items (reload, forward, back) */
+tooltip {
+	-moz-appearance: none !important;
+    background-color: var(--misc-bg) !important;
+    font-family: var(--misc-font-fam) !important;
+    font-size: var(--misc-font-size) !important;
+    color: var(--white) !important;
+	border: none !important;
+	padding: 6px !important;
+}

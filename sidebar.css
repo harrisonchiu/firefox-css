@@ -1,0 +1,41 @@
+/* === === Sidebar === === */
+
+/* Main sidebar body */
+vbox#sidebar-box, #sidebar, 
+#sidebar-header, #bookmarks-view, 
+#bookmarksPanel, #historyTree, #history-panel {
+	background-color: var(--sidebar-bg) !important;
+	color: var(--sidebar-text-color) !important;
+	font-size: var(--sidebar-font-size) !important;
+	font-family: var(--sidebar-font-fam) !important;
+	width: var(--sidebar-width) !important;
+	border: none !important;
+}
+#sidebar-header {
+	font-size: var(--sidebar-font-header-size) !important;
+	font-family: var(--sidebar-font-header-fam) !important;
+}
+
+/* Removes ugly line on the side of sidebar */
+.sidebar-splitter, #sidebar-search-container {
+	display: none !important;
+}
+
+/* Removes ugly icons for bookmarks and history */
+.sidebar-placesTreechildren::-moz-tree-image(title, container) {
+	list-style-image: none !important;
+	margin: -5px !important;
+}
+
+/* Each history item in history list */
+#historyTree treechildren::-moz-tree-cell-text {
+	font-size: var(--sidebar-historylist-font-size) !important;
+	padding: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+#historyTree treechildren::-moz-tree-row {
+	min-height: 16px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}

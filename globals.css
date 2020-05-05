@@ -1,0 +1,68 @@
+:root {
+    /* Global Colors */
+    --dark-gray: #1d1d1d;
+    --dark-gray-text: #1d1d1d;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Sidebar */
+    --sidebar-bg: #1d1f28;
+    --sidebar-text-color: #ffffff;
+    --sidebar-font-size: 16px;
+    --sidebar-font-header-size: 24px;
+    --sidebar-font-fam: "Consolas";
+    --sidebar-font-header-fam: "Consolas";
+    --sidebar-width: 450px;
+    --sidebar-historylist-font-size: 16px;
+
+    /* Context Menu */
+    --contextmenu-bg: #1d1d1d;
+    --contextmenu-disabled: #808080;
+    --contextmenu-highlight: #404040;
+    --contextmenu-font-fam: "Consolas";
+    --contextmenu-font-size: 11pt;
+    --contextmenu-width: 170px;
+    --contextmenu-item-size: 7px 0px 7px 0px;
+    --contextmenu-menugroup-size: 5px 0px 5px 0px;
+
+    /* Miscellanous */
+    --misc-bg: #1d1f28;
+    --misc-font-fam: "Consolas";
+    --misc-font-size: 11pt;
+
+    /* Menu */
+    --menu-bg: #1d1f28;
+    --menu-font-size: 12pt;
+
+    /* Url Preview */
+    --urlbox-bg: #1d1d1d;
+    --urlbox-font-fam: "Consolas";
+    --urlbox-font-size: 10pt;
+    --urlbox-font-weight: thin;
+    --urlbox-color: #1e90ff;
+    
+    /* Tabs */
+    --tab-height: 38px;
+    --tab-font-weight: thin;
+    --tab-font-fam: "Consolas";
+    --tab-font-size: 14pt;
+    --tab-startcolor-unfocused: #1de9b6;
+    --tab-endcolor-unfocused: #0091ea;
+    --tab-startcolor-hover: #e040fb;
+    --tab-endcolor-hover: #ff5252;
+    --tab-startcolor-selected: #ff9100;
+    --tab-endcolor-selected: #ffea00;
+    --pintab-startcolor-unfocused: #1de9b6;
+    --pintab-endcolor-unfocused: #0091ea;
+    --pintab-startcolor-hover: #e040fb;
+    --pintab-endcolor-hover: #ff5252;
+    --pintab-startcolor-selected: #ff9100;
+    --pintab-endcolor-selected: #ffea00;
+
+    /* Url Bar */
+    --urlbar-urlcolor: lightblue;
+    --urlbar-urlhighlight: #404040;
+    --urlbar-font-fam: "Consolas";
+    --urlbar-urlitem-height: 6px;
+
+}

@@ -1,0 +1,59 @@
+/* === === Context Menu === === */
+
+/* Main context menu body */
+menupopup {
+	-moz-appearance: none !important;
+	background-color: var(--contextmenu-bg) !important;
+	min-width: var(--contextmenu-width) !important;
+	font-size: var(--contextmenu-font-size) !important;
+	font-family: var(--contextmenu-font-fam) !important;
+	border: none !important;
+	padding: 0px !important;
+}
+menuitem, menu {
+	-moz-appearance: none !important;
+	color: var(--white) !important;
+	padding: var(--contextmenu-item-size) !important;
+}
+menuitem[disabled="true"], 
+menuitem[disabled="true"] > .menu-text {
+	color: var(--contextmenu-disabled) !important;
+}
+menu[open="true"],
+menuitem:hover, menu:hover, 
+menuitem[_moz-menuactive="true"] {
+	-moz-appearance: none !important;
+	padding: var(--contextmenu-item-size) !important;
+	background-color: var(--contextmenu-highlight) !important;
+}
+
+/* Top menu group (Back, Forward, Reload, Bookmark) */
+menugroup {
+	padding: 0px !important;
+	background-color: transparent !important;
+}
+#context-back, #context-forward, 
+#context-reload, #context-stop, #context-bookmarkpage {
+	padding: var(--contextmenu-menugroup-size) !important;
+}
+
+/* Remove some unwanted items */
+menuseparator, #context-sendlinktodevice, 
+#context-sendpagetodevice, #context-savelink, 
+#screenshots_mozilla_org-menuitem-_create-screenshot, 
+#context_sendTabToDevice, #context-inspect-a11y,
+#ublock0_raymondhill_net-menuitem-_uBlock0-blockElement {
+	display: none !important;
+}
+
+/* Fix text color for context menu in sidebar */
+#placesContext_open\:newtab, #placesContext_openContainer\:tabs, 
+#placesContext_new\:bookmark, #placesContext_new\:folder, 
+#placesContext_new\:separator, #placesContext_cut, #placesContext_copy, 
+#placesContext_paste, #placesContext_delete, 
+#placesContext_open\:newprivatewindow, #placesContext_sortBy\:name, 
+#placesContext_show\:info, #placesContext_open\:newwindow, 
+#placesContext_createBookmark, #placesContext_delete_history, 
+#placesContext_deleteHost {
+	color: var(--white) !important;
+}
