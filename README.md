@@ -1,7 +1,8 @@
 # firefox-css
 Minimalist and materialistic design of Firefox interface and creates dark mode for multiple sites.
-Plan to make CSS code more efficient. Many attributes don't seem to work without <!important>.
+Plan to make CSS code more efficient (especially CSS for sites). Many attributes don't seem to work without <!important>.
 
-Works as of Firefox 72. Mozilla seems to want to remove some CSS such as -moz; will update then. 
+Mozilla seems to want to remove some CSS such as -moz; will update then. 
 
-Visual bugs in Firefox 75
+Works on Firefox 75 (latest stable version).\
+Tested on Windows, will test on Linux (Ubuntu) with (for different windows close buttons and movement).
