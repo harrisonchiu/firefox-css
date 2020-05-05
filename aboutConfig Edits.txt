@@ -1,0 +1,9 @@
+www.reddit.com/r/firefox/comments/c8z0hx/help_set_new_tab_page_to_local_file/ CUSTOM NEW TAB PAGE
+extensions.htmlaboutaddons.discover.enabled FALSE
+extensions.htmlaboutaddons.recommendations.enabled FALSE
+full-screen-api.warning.timeout EDIT TIME IN MS
+// FOR DIFFERENT SEARCH ENGINE IN INCOGNITO
+browser.search.separatePrivateDefault TRUE
+browser.search.separatePrivateDefault.ui.enabled TRUE
+browser.search.suggest.enabled.private TRUE
+
