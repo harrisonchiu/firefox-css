@@ -1,8 +1,11 @@
 /* === === URL Bar === === */
 
 /* Url Search Bar */
-#urlbar-input {
-	font-family: var(--urlbar-font-fam) !important;
+#urlbar-input, #urlbar-results, .urlbarView-url, 
+.search-panel-one-offs-container {
+    font-family: var(--urlbar-font-fam) !important;
+	font-size: var(--urlbar-font-size) !important;
+	font-weight: var(--urlbar-font-weight) !important;
     color: var(--white) !important;
 }
 #urlbar #urlbar-background {
