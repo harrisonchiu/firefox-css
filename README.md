@@ -26,7 +26,7 @@ Tested on Windows, will test on Linux (Ubuntu) with (for different windows close
 - Code reorganized, refers to multiple seperate files for better organization
 - Removed many useless and outdated code (some were which Firefox did not support anymore)
 - Most variables are easily changed in a seperate file with reference to what will be changed (much easier to customize and personlize your Firefox)
-  - CSS which do not have a variable should not be changed because it may mess up cause unexpected/unwanted visuals
+  - Changing CSS which do not have a variable may mess things up
 
 #### Firefox v72
 - Uploaded
