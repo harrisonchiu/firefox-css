@@ -1,0 +1,37 @@
+It's just slightly more difficult than web development. To me a big discovery was that you can open developer tools for the browser itself. Here's how to do this:
+
+    Open a devtools on any page
+
+    Go to settings
+
+    Check "enable browser chrome and add-on debugging toolboxes" and "enable remote debugging" checkboxes.
+
+    Close devtools
+
+    Press ctrl+alt+shift+I.
+
+    It will ask you whether to allow connection or not, click ok.
+
+    Browser devtools will open. From there, you can screw around with browser UI as if it were just a webpage. Do note, however, that there are many browser-specific(-moz-) rules which can act quite unlike conventional CSS. Protip: don't touch default rules and element styles, add new rules instead. This will make your changeset cleaner and you won't miss any rule.
+
+    Once you're done, go to "changes" tab, and copy all your changes and plop them into your userchrome.css. If you don't have it, the following is how to create one:
+
+    Open about:config in browser
+
+    Search for toolkit.legacyUserProfileCustomizations.stylesheets
+
+    Set it to True. If there isn't one, create it (Boolean type)
+
+    Open %appdata%\Mozilla\Firefox\Profiles in windows explorer
+
+    Open your profile folder. If there are multiple and you aren't sure which one you're currently using, consult with about:profiles page in your browser
+
+    There, create a folder named "chrome"
+
+    In there, create a blank userChrome.css file.
+
+    Copy-paste all your rules in there. Make sure they are all wrapped in @-moz-document url(chrome://browser/content/browser.xul) { } selector so that your rules only affect browser UI, not websites and addons.
+
+    Reboot your browser for changes to take effect.
+
+You can also edit addons UI like this. Just go to about:debugging, find addon in question, click "inspect", and switch frame to the second one.
