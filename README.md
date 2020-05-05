@@ -6,7 +6,7 @@ Inspired by the old versions ![Minimal Functional Firefox](https://github.com/mu
 
 Mozilla seems to want to remove some CSS such as -moz; will update then. 
 
-Works on Firefox 75 (latest stable version).\
+Works on Firefox 76 (latest stable version).
 
 ### To-Do
 - [ ] Booksmarks bar
@@ -19,7 +19,7 @@ Works on Firefox 75 (latest stable version).\
 
 ### Changelog
 
-#### Firefox v75
+#### Firefox v75+
 - Fixed visual bugs for changed v75 UI
 - Absolute massive file organization and CSS code overhaul
 - Code reorganized, refers to multiple seperate files for better organization
