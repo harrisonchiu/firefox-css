@@ -7,7 +7,6 @@ Inspired by the old versions ![Minimal Functional Firefox](https://github.com/mu
 Mozilla seems to want to remove some CSS such as -moz; will update then. 
 
 Works on Firefox 75 (latest stable version).\
-Tested on Windows, will test on Linux (Ubuntu) with (for different windows close buttons and movement).
 
 ### To-Do
 - [ ] Booksmarks bar
