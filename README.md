@@ -18,6 +18,11 @@ Works on Firefox 76 (latest stable version).
 - [ ] Custom homepage (may not do, Firefox keeps breaking .xml and .js with userContent.css; same reason why I do not do custom scrollbars, although changing scrollbar width and color is fine right now, anymore than that is a pain)
 
 
+### Sample (in /images)
+- firefox changed default PDF viewer to dark so pdfViewer2.png (from custom css) looks similar to the native one
+- Google Calendar Dark Mode
+![alt text](https://github.com/harrisonchiu/firefox-css/blob/images/image.jpg?raw=true)
+
 
 ### Changelog
 
