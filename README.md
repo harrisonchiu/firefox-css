@@ -20,16 +20,16 @@ Works on Firefox 76 (latest stable version).
 
 ### Sample (in /images)
 - firefox changed default PDF viewer to dark so pdfViewer2.png (from custom css) looks similar to the native one
-- Google Calendar Dark Mode (there are some unknown unicode don't worry about that, that is just my font choice from settings, not from the CSS)
+- Google Calendar Dark Mode (there are some unknown unicode don't worry about that, that is just my font choice from settings, not from the CSS)\
 ![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/googleCalendarDarkMode2.png)
 - Main UI
-### yes i am aware the color scheme looks ugly, i chose it to show how you can easily customize many parts of the browser from custom.css file. in particular, you can change the color for all three states of tabs, make it a gradient, round tabs, big (or smaller) font size/family
+### yes i am aware the color scheme looks ugly, i chose it to show how you can easily customize many parts of the browser from custom.css file. in particular, you can change the color for all three states of tabs, make it a gradient, round tabs, big (or smaller) font size/family\
 ![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/mainUI.png)
 
-- Sidebar (removed visual noise from default)
+- Sidebar (removed visual noise from default)\
 ![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/Sidebar.png)
 
-- Dark Mode for Embedded PDF Viewer (pdf viewer built into the site)
+- Dark Mode for Embedded PDF Viewer (pdf viewer built into the site)\
 ![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/pdfViewer.png)
 
 ### Changelog
