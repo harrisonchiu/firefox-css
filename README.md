@@ -21,7 +21,7 @@ Works on Firefox 76 (latest stable version).
 ### Sample (in /images)
 - firefox changed default PDF viewer to dark so pdfViewer2.png (from custom css) looks similar to the native one
 - Google Calendar Dark Mode
-![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/googleCalendarDarkMode.png)
+![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/googleCalendarDarkMode2.png)
 
 
 ### Changelog
