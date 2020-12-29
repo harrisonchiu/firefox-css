@@ -26,6 +26,9 @@ Works on Firefox 76 (latest stable version).
 ### yes i am aware the color scheme looks ugly, i chose it to show how you can customize many parts of the browser from custom.css file. in particular, you can change the color for all three states of tabs, make it a gradient, round tabs, big (or smaller) font size/family
 ![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/mainUI.png)
 
+- Sidebar (removed visual noise from default)
+![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/Sidebar.png)
+
 ### Changelog
 
 #### Firefox v75+
