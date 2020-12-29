@@ -20,7 +20,7 @@ Works on Firefox 76 (latest stable version).
 
 ### Sample (in /images)
 - firefox changed default PDF viewer to dark so pdfViewer2.png (from custom css) looks similar to the native one
-- Google Calendar Dark Mode
+- Google Calendar Dark Mode (there are some unknown unicode don't worry about that, that is just my font choice from settings, not from the CSS)
 ![alt text](https://github.com/harrisonchiu/firefox-css/blob/main/images/googleCalendarDarkMode2.png)
 
 
