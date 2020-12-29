@@ -2,6 +2,8 @@
 Minimalist and materialistic design of Firefox interface and creates dark mode for multiple sites.
 Plan to make CSS code more efficient (especially CSS for sites). Many attributes don't seem to work without <!important>.
 
+Can very easily change properties such as color and font in custom.css
+
 Inspired by the old versions ![Minimal Functional Firefox](https://github.com/mut-ex/minimal-functional-fox), so creds to him.
 
 Mozilla seems to want to remove some CSS such as -moz; will update then. 
